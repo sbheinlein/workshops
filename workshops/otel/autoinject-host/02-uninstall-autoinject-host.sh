@@ -17,6 +17,6 @@ echo "Removing OpenTelemetry Injector library..."
 sudo rm -rf /usr/lib/opentelemetry/libotelinject.so
 
 echo "Removing OpenTelemetry Injector preload entry..."
-sudo rm -rf /etc/ld.so.preload
+sudo sed -i '\|/usr/lib/opentelemetry/libotelinject.so|d' /etc/ld.so.preload
 
 echo "OpenTelemetry Injector uninstallation complete."
