@@ -8,7 +8,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-sudo dpkg -r opentelemetry-injector
+sudo dpkg --purge opentelemetry-injector
 
 echo "Removing OpenTelemetry Injector configuration directory..."
 sudo rm -rf /etc/opentelemetry/otelinject
