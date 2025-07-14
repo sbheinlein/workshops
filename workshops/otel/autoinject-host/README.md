@@ -141,7 +141,7 @@ pm2 startup
 This script removes the OpenTelemetry Injector package and cleans up associated files.
 
 ```bash
-sudo ./02-uninstall-autoinject-host.sh
+sudo .uninstall.sh
 ```
 
 **Important:** This script carefully removes only the OpenTelemetry Injector-specific line from `/etc/ld.so.preload` to avoid affecting other system components. It does **not** uninstall Docker or `build-essential` installed by the setup script, as those are considered broader system dependencies.
