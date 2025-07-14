@@ -6,7 +6,7 @@ This directory contains a set of Bash scripts to automate the setup, installatio
 
 *   `00-setup-env.sh`: Sets up the necessary environment, including installing `build-essential` and Docker.
 *   `01-install-autoinject-host.sh`: Clones the OpenTelemetry Injector repository, builds the Debian package, installs it, and configures the `ld.so.preload` mechanism.
-*   `02-uninstall-autoinject-host.sh`: Uninstalls the OpenTelemetry Injector package and cleans up related files and configurations.
+*   `uninstall.sh`: Uninstalls the OpenTelemetry Injector package and cleans up related files and configurations.
 
 ## Prerequisites
 
